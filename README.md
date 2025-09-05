@@ -9,7 +9,7 @@ O sistema combina técnicas de deep learning para análise visual, dados tempora
 ## Estrutura do Projeto
 
 Project-root/  
-  │  
+ │  
  ├── data/  
  │ ├── raw/                  # Dados brutos, imagens originais e metadados não processados  
  │ │ ├── for_fit/            # Dados para treino e teste do modelo  
@@ -38,10 +38,10 @@ Project-root/
 ## Como Usar
 
 1. Instale as dependências necessárias listadas em `requirements.txt`;
-2. Prepare os dados para ajuste do modelo na pasta `data/raw/`;
-3. Prepare as imagens, cujas métricas se deseja, prever na pasta `data/raw/`;
+2. Prepare os dados para ajuste do modelo na pasta `data/raw/for_fit/`;
+3. Prepare as imagens, cujas métricas se deseja, prever na pasta `data/raw/for_predict/`;
 4. Ajuste os parâmetros iniciais do arquivo `main.ipynb` na pasta `notebooks/` e execute-o;
-5. Avalie os resultados no próprio arquivo `main.ipynb` ou dentre os relatórios em `reoprts/`;
+5. Avalie os resultados no próprio arquivo `main.ipynb` ou dentre os relatórios em `reports/`;
 
 ## Dependências
 
