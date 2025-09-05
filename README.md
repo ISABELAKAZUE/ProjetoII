@@ -9,31 +9,31 @@ O sistema combina técnicas de deep learning para análise visual, dados tempora
 ## Estrutura do Projeto
 
 Project-root/
- │
- ├── data/
- │ ├── raw/                  # Dados brutos, imagens originais e metadados não processados
- │ │ ├── for_fit/            # Dados para treino e teste do modelo
- │ │ └── for_predict/        # Imagens a serem previstas
- │ ├── processed/            # Dados pré-processados prontos para uso (matrizes, features)
- │
- ├── notebooks/              # Jupyter notebooks para exploração, análise e testes
- │
- ├── src/                    # Código-fonte do projeto
- │ ├── data_preprocessing/   # Scripts para carregamento e limpeza dos dados, pré-processamento de imagens
- │ ├── feature_extraction/   # Scripts para extração de features visuais e textuais
- │ ├── models/               # Definição e treinamento dos modelos de deep learning
- │ ├── evaluation/           # Scripts para avaliação de métricas e análise dos
- │ │	resultados
- │ ├── utils/                # Funções utilitárias e helpers gerais
- │ └── inference/            # Código para gerar predições com modelos treinados
- │
- ├── experiments/            # Configurações, logs e resultados de experimentos de modelagem
- │
- ├── reports/                # Documentação do projeto, relatórios e apresentações
- │
- ├── requirements.txt        # Lista de dependências necessárias para rodar o projeto
- ├── README.md               # Apresentação do projeto e instruções principais
- └── .gitignore              # Arquivos e pastas ignorados pelo Git
+* │
+* ├── data/
+* │ ├── raw/                  # Dados brutos, imagens originais e metadados não processados
+* │ │ ├── for_fit/            # Dados para treino e teste do modelo
+* │ │ └── for_predict/        # Imagens a serem previstas
+* │ ├── processed/            # Dados pré-processados prontos para uso (matrizes, features)
+* │
+* ├── notebooks/              # Jupyter notebooks para exploração, análise e testes
+* │
+* ├── src/                    # Código-fonte do projeto
+* │ ├── data_preprocessing/   # Scripts para carregamento e limpeza dos dados, pré-processamento de imagens
+* │ ├── feature_extraction/   # Scripts para extração de features visuais e textuais
+* │ ├── models/               # Definição e treinamento dos modelos de deep learning
+* │ ├── evaluation/           # Scripts para avaliação de métricas e análise dos
+* │ │	resultados
+* │ ├── utils/                # Funções utilitárias e helpers gerais
+* │ └── inference/            # Código para gerar predições com modelos treinados
+* │
+* ├── experiments/            # Configurações, logs e resultados de experimentos de modelagem
+* │
+* ├── reports/                # Documentação do projeto, relatórios e apresentações
+* │
+* ├── requirements.txt        # Lista de dependências necessárias para rodar o projeto
+* ├── README.md               # Apresentação do projeto e instruções principais
+* └── .gitignore              # Arquivos e pastas ignorados pelo Git
 
 ## Como Usar
 
