@@ -40,9 +40,8 @@ Project-root/
 1. Instale as dependências necessárias listadas em `requirements.txt`;
 2. Prepare os dados para ajuste do modelo na pasta `data/raw/`;
 3. Prepare as imagens, cujas métricas se deseja, prever na pasta `data/raw/`;
-4. Execute o arquivo `main.ipynb` na pasta `notebooks/`;
-5. Avalie a performance com os scripts em `src/evaluation/`;
-6. Use o código em `src/inference/` para testar novos criativos.
+4. Ajuste os parâmetros iniciais do arquivo `main.ipynb` na pasta `notebooks/` e execute-o;
+5. Avalie os resultados no próprio arquivo `main.ipynb` ou dentre os relatórios em `reoprts/`;
 
 ## Dependências
 
