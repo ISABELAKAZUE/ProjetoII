@@ -8,32 +8,52 @@ O sistema combina técnicas de deep learning para análise visual, dados tempora
 
 ## Estrutura do Projeto
 
-- `data/` - Dados brutos e processados (imagens e métricas)
-- `notebooks/` - Notebooks para exploração e análises preliminares
-- `src/` - Código-fonte para pré-processamento, modelagem, avaliação e inferência
-- `reports/` - Documentação e relatórios do projeto
-- `experiments/` - Resultados e logs dos experimentos realizados
+Project-root/
+ │
+ ├── data/
+ │ ├── raw/                  # Dados brutos, imagens originais e metadados não processados
+ │ │ ├── for_fit/            # Dados para treino e teste do modelo
+ │ │ └── for_predict/        # Imagens a serem previstas
+ │ ├── processed/            # Dados pré-processados prontos para uso (matrizes, features)
+ │
+ ├── notebooks/              # Jupyter notebooks para exploração, análise e testes
+ │
+ ├── src/                    # Código-fonte do projeto
+ │ ├── data_preprocessing/   # Scripts para carregamento e limpeza dos dados, pré-processamento de imagens
+ │ ├── feature_extraction/   # Scripts para extração de features visuais e textuais
+ │ ├── models/               # Definição e treinamento dos modelos de deep learning
+ │ ├── evaluation/           # Scripts para avaliação de métricas e análise dos
+ │ │	resultados
+ │ ├── utils/                # Funções utilitárias e helpers gerais
+ │ └── inference/            # Código para gerar predições com modelos treinados
+ │
+ ├── experiments/            # Configurações, logs e resultados de experimentos de modelagem
+ │
+ ├── reports/                # Documentação do projeto, relatórios e apresentações
+ │
+ ├── requirements.txt        # Lista de dependências necessárias para rodar o projeto
+ ├── README.md               # Apresentação do projeto e instruções principais
+ └── .gitignore              # Arquivos e pastas ignorados pelo Git
 
 ## Como Usar
 
-1. Instale as dependências necessárias listadas em `requirements.txt`.
-2. Prepare os dados brutos na pasta `data/raw/`.
-3. Execute os scripts de pré-processamento para gerar os dados prontos para modelagem.
-4. Treine os modelos usando os scripts em `src/models/`.
-5. Avalie a performance com os scripts em `src/evaluation/`.
+1. Instale as dependências necessárias listadas em `requirements.txt`;
+2. Prepare os dados para ajuste do modelo na pasta `data/raw/`;
+3. Prepare as imagens, cujas métricas se deseja, prever na pasta `data/raw/`;
+4. Execute o arquivo `main.ipynb` na pasta `notebooks/`;
+5. Avalie a performance com os scripts em `src/evaluation/`;
 6. Use o código em `src/inference/` para testar novos criativos.
 
 ## Dependências
 
 - Python 3.11+
-- TensorFlow ou PyTorch (especificar qual foi usado)
+- TensorFlow
 - pandas, numpy, scikit-learn
 - OpenCV ou PIL para processamento de imagens
 - Jupyter para notebooks
 
-## Contato
+## Autores
 
-Autores:
 - Felipe Neres Silva Bezerra
 - Guilherme Da Silva Brevilato
 - Isabela Kazue Sinoduka
