@@ -9,7 +9,7 @@ O sistema combina técnicas de deep learning para análise visual, dados tempora
 ## Estrutura do Projeto
 
 Project-root/  
- │  
+  │  
  ├── data/  
  │ ├── raw/                  # Dados brutos, imagens originais e metadados não processados  
  │ │ ├── for_fit/            # Dados para treino e teste do modelo  
