@@ -8,7 +8,7 @@ O sistema combina técnicas de deep learning para análise visual, dados tempora
 
 ## Estrutura do Projeto
 
-Project-root/  
+ProjetoII  
  │  
  ├── data/  
  │ ├── raw/                  # Dados brutos, imagens originais e metadados não processados  
