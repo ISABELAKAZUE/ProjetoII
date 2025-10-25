@@ -6,6 +6,22 @@ Este projeto tem como objetivo desenvolver um modelo que prevê a performance de
 
 O sistema combina técnicas de deep learning para análise visual, dados temporais e metadados de campanhas para gerar predições de métricas como CTR, taxa de conversão e ROAS, além de sugerir os melhores horários para veiculação dos anúncios.
 
+## Etapas do Projeto
+
+Este projeto é dividido em 5 etapas:
+* Arquitetura da CNN
+* Validação cruzada (LOOCV)
+* Busca aleatória de hiperparâmetros (Random Search)
+* Modelo definitivo
+* Avaliação do modelo
+
+O processamento de todas as etapas pode ser acompanhado executando os notebooks (.ipynb) na raiz do repositório. As três primeiras etapas estão em `Transfer_learning_and_fine_tuning.ipynb`; o modelo definitivo é obtido em `best_fit_as_product.ipynb`; e a avaliação do modelo está em `model_evaluation.ipynb`. O notebook `update_images_path.ipynb` foi utilizado para adequar os diretórios das imagens durante a montagem do dataset.
+
+## Como reproduzir
+1. Clone ou baixe este repositório em um diretório apropriado.
+2. Crie um ambiente Python e instale as dependências listadas em `requirements.txt`.
+3. Execute integralmente o notebook `Transfer_learning_and_fine_tuning.ipynb` antes de executar `model_evaluation.ipynb` e `best_fit_as_product.ipynb`; estes dois últimos são independentes entre si.
+
 ## Estrutura do Projeto
 
 ProjetoII  
@@ -14,9 +30,7 @@ ProjetoII
  │ ├── raw/                  # Dados brutos, imagens originais e metadados não processados  
  │ │ ├── for_fit/            # Dados para treino e teste do modelo  
  │ │ └── for_predict/        # Imagens a serem previstas  
- │ └── processed/            # Dados pré-processados prontos para uso (matrizes, features)  
- │  
- ├── notebooks/              # Jupyter notebooks para exploração, análise e testes  
+ │ └── processed/            # Dados pré-processados prontos para uso (matrizes, features)   
  │  
  ├── src/                    # Código-fonte do projeto  
  │ ├── data_preprocessing/   # Scripts para carregamento e limpeza dos dados, pré-processamento de imagens  
@@ -25,25 +39,13 @@ ProjetoII
  │ ├── evaluation/           # Scripts para avaliação de métricas e análise dos  
  │ │	resultados  
  │ ├── utils/                # Funções utilitárias e helpers gerais  
- │ └── inference/            # Código para gerar predições com modelos treinados  
- │  
- ├── experiments/            # Configurações, logs e resultados de experimentos de modelagem  
+ │ └── inference/            # Código para gerar predições com modelos treinados   
  │  
  ├── reports/                # Documentação do projeto, relatórios e apresentações  
  │  
  ├── requirements.txt        # Lista de dependências necessárias para rodar o projeto  
  ├── README.md               # Apresentação do projeto e instruções principais  
  └── .gitignore              # Arquivos e pastas ignorados pelo Git  
-  
-## Como Usar
-
-1. Clone o repositório;
-2. Navegue até a pasta do projeto:
-3. Instale as dependências necessárias listadas em `requirements.txt`;
-4. Prepare os dados para ajuste do modelo na pasta `data/raw/for_fit/`;
-5. Prepare as imagens, cujas métricas se deseja, prever na pasta `data/raw/for_predict/`;
-6. Ajuste os parâmetros iniciais do arquivo `main.ipynb` na pasta `notebooks/` e execute-o;
-7. Avalie os resultados no próprio arquivo `main.ipynb` ou dentre os relatórios em `reports/`
 
 ## Dependências
 
